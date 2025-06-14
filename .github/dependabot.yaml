@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/sohome_client"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/sohome_client"
+    schedule:
+      interval: "daily"
