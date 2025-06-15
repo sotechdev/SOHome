@@ -169,7 +169,7 @@ class OpenIdMetadata {
     pushedAuthorizationRequestEndpoint =
         json['pushed_authorization_request_endpoint'] as String?;
     mtlsEndpointAliases = json['mtls_endpoint_aliases'] != null
-        ? new MtlsEndpointAliases.fromJson(
+        ? MtlsEndpointAliases.fromJson(
             json['mtls_endpoint_aliases'] as Map<String, dynamic>,
           )
         : null;
