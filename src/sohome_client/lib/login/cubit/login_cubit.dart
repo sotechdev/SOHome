@@ -9,6 +9,8 @@ class LoginCubit extends Cubit<LoginState> {
 
   final AuthRepository _authRepository;
 
+  Stream<LoginState> get stateStream => stream;
+
   Future<void> signIn() async {
     emit(LoginLoading());
     try {
